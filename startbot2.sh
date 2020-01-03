@@ -1,0 +1,2 @@
+cd bot2
+docker run -it --network host -e ROCKETCHAT_URL=localhost:3000 -e ROCKETCHAT_ROOM='botparty' -e LISTEN_ON_ALL_PUBLIC=true -e ROCKETCHAT_USER=bot2 -e ROCKETCHAT_PASSWORD=secret -e ROCKETCHAT_AUTH=password -e BOT_NAME=bot2 -e EXTERNAL_SCRIPTS=hubot-pugme,hubot-help -v /${PWD}/scripts:/home/hubot/scripts rocketchat/hubot-rocketchat
